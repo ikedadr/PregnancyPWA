@@ -1,0 +1,12 @@
+{
+  "name": "妊娠週数・分娩予定日計算",
+  "short_name": "妊娠週数",
+  "description": "分娩予定日と妊娠週数を計算するアプリ",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f3f5f7",
+  "theme_color": "#4778ff",
+  "lang": "ja",
+  "orientation": "any"
+}
