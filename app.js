@@ -1151,14 +1151,14 @@ document.addEventListener(
             });
 
 
-        document
-            .getElementById(
-                "calculate-button"
-            )
-            .addEventListener(
-                "click",
-                calculateDueDate
-            );
+document
+    .getElementById(
+        "input-date"
+    )
+    .addEventListener(
+        "change",
+        calculateDueDate
+    );
 
 
         document
