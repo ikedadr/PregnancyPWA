@@ -695,3 +695,277 @@ input[type="date"] {
 .calendar-day.holiday {
     color: #e53935;
 }
+
+/* =========================================================
+   スマホ・タブレット レスポンシブ調整
+   iPhone / Android / iPad 共通
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   基本：画面幅に応じて全体を滑らかに調整
+   --------------------------------------------------------- */
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.app {
+    width: min(100%, 900px);
+    box-sizing: border-box;
+    padding-left: clamp(12px, 2.5vw, 24px);
+    padding-right: clamp(12px, 2.5vw, 24px);
+}
+
+/* タイトル */
+header h1 {
+    font-size: clamp(24px, 4.5vw, 36px);
+    line-height: 1.25;
+}
+
+/* タブ */
+.tabs {
+    gap: clamp(8px, 1.5vw, 16px);
+}
+
+.tab-button {
+    font-size: clamp(18px, 3.2vw, 26px);
+    padding-top: clamp(14px, 2vw, 22px);
+    padding-bottom: clamp(14px, 2vw, 22px);
+}
+
+/* ---------------------------------------------------------
+   スマートフォン
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+    .app {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    header {
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+
+    header h1 {
+        font-size: clamp(24px, 7vw, 31px);
+        margin: 0;
+        white-space: nowrap;
+    }
+
+    /* 上部タブ */
+    .tabs {
+        gap: 8px;
+        margin-bottom: 16px;
+    }
+
+    .tab-button {
+        font-size: clamp(17px, 5vw, 22px);
+        padding: 14px 5px;
+        min-height: 58px;
+    }
+
+    /* カード全般 */
+    .card {
+        padding: 18px;
+        margin-bottom: 14px;
+        border-radius: 20px;
+    }
+
+    .card h2 {
+        font-size: clamp(20px, 5.5vw, 26px);
+        margin-top: 0;
+        margin-bottom: 16px;
+    }
+
+    /* 計算方法 */
+    .method-option {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .method-option label {
+        font-size: clamp(18px, 5vw, 23px);
+    }
+
+    /* 日付入力カード */
+    .date-card {
+        padding: 16px 18px;
+        min-height: 0;
+    }
+
+    .date-card label {
+        font-size: clamp(18px, 5vw, 23px);
+    }
+
+    input[type="date"] {
+        font-size: clamp(18px, 5vw, 23px);
+        min-height: 48px;
+    }
+
+    /* 計算ボタン */
+    #calculateButton,
+    .calculate-button,
+    button.calculate {
+        min-height: 58px;
+        padding: 12px;
+        font-size: clamp(21px, 6vw, 27px);
+        margin-top: 12px;
+        margin-bottom: 14px;
+    }
+
+    /* 計算結果 */
+    .result-row {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .result-row span,
+    .result-row strong {
+        font-size: clamp(18px, 5vw, 23px);
+    }
+
+    /* -----------------------------------------------------
+       妊娠カレンダー
+       ----------------------------------------------------- */
+
+    .calendar-header,
+    .calendar-info {
+        padding: 14px 12px;
+    }
+
+    /* 前月・翌月・今月 */
+    .calendar-navigation {
+        gap: 8px;
+        margin-top: 12px;
+        margin-bottom: 14px;
+    }
+
+    .calendar-navigation button {
+        padding: 10px 8px;
+        min-height: 48px;
+        font-size: clamp(16px, 4.5vw, 20px);
+    }
+
+    .calendar-month-title {
+        font-size: clamp(22px, 6vw, 28px);
+    }
+
+    /* カレンダー本体 */
+    .calendar-card {
+        padding: 8px 6px 10px;
+        border-radius: 18px;
+        gap: 3px;
+    }
+
+    .weekday {
+        font-size: clamp(15px, 4vw, 19px);
+        padding: 7px 0;
+    }
+
+    .calendar-day {
+        min-width: 0;
+        min-height: clamp(64px, 18vw, 78px);
+        padding: 5px 1px;
+        border-radius: 8px;
+    }
+
+    .calendar-day .day-number {
+        font-size: clamp(17px, 5vw, 22px);
+        line-height: 1.15;
+    }
+
+    .calendar-day .gestational-age {
+        font-size: clamp(12px, 3.4vw, 16px);
+        line-height: 1.15;
+        white-space: nowrap;
+    }
+
+    /* カレンダー下の選択日 */
+    .selected-date-card {
+        padding: 15px 10px;
+        margin-top: 14px;
+    }
+
+    .selected-date-card .selected-date {
+        font-size: clamp(18px, 5vw, 23px);
+    }
+
+    .selected-date-card .selected-ga {
+        font-size: clamp(22px, 6vw, 28px);
+    }
+}
+
+
+/* ---------------------------------------------------------
+   特に縦の短いスマートフォン
+   横幅だけでなく高さでも圧縮
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) and (max-height: 800px) {
+
+    header {
+        margin-top: 10px;
+        margin-bottom: 12px;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    .tab-button {
+        min-height: 50px;
+        padding: 9px 4px;
+    }
+
+    .card {
+        padding: 14px;
+        margin-bottom: 10px;
+    }
+
+    .calendar-day {
+        min-height: 56px;
+    }
+
+    .calendar-day .day-number {
+        font-size: 17px;
+    }
+
+    .calendar-day .gestational-age {
+        font-size: 12px;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   タブレット（iPad / Android tablet）
+   --------------------------------------------------------- */
+
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    .app {
+        width: min(94%, 900px);
+    }
+
+    header h1 {
+        font-size: clamp(30px, 4vw, 36px);
+    }
+
+    .calendar-day {
+        min-height: clamp(78px, 10vw, 100px);
+    }
+
+    .calendar-day .day-number {
+        font-size: clamp(20px, 2.8vw, 27px);
+    }
+
+    .calendar-day .gestational-age {
+        font-size: clamp(15px, 2vw, 20px);
+    }
+}
