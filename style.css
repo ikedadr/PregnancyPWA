@@ -969,3 +969,116 @@ header h1 {
         font-size: clamp(15px, 2vw, 20px);
     }
 }
+
+/* =========================================================
+   スマートフォン用：縦方向をコンパクトにする
+   iPhone / Android
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    /* アプリ全体 */
+    .app {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* タイトル */
+    header {
+        margin-top: 4px;
+        margin-bottom: 8px;
+    }
+
+    header h1 {
+        font-size: clamp(21px, 6vw, 27px);
+        margin: 8px 0 12px;
+    }
+
+    /* 上部タブ */
+    .tabs {
+        gap: 8px;
+        margin-bottom: 12px;
+    }
+
+    .tab-button {
+        min-height: 48px;
+        padding: 8px 4px;
+        font-size: clamp(17px, 4.8vw, 21px);
+    }
+
+    /* 白いカード全般 */
+    .card {
+        padding: 12px 14px;
+        margin-bottom: 10px;
+        border-radius: 18px;
+    }
+
+    /* 見出し */
+    h2 {
+        font-size: clamp(20px, 5.5vw, 24px);
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    /* 計算方法 */
+    .method-list {
+        gap: 4px;
+    }
+
+    .method-option {
+        min-height: 48px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    /* Day 3 / Day 5 */
+    .embryo-options {
+        padding: 8px 10px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    /* 日付入力部分 */
+    .date-card {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    /* 計算ボタン */
+    .calculate-button {
+        min-height: 52px;
+        margin-top: 8px;
+        margin-bottom: 10px;
+        padding: 8px;
+    }
+
+    /* 計算結果 */
+    .result-card {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    /* カレンダー上部 */
+    .calendar-nav {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        gap: 6px;
+    }
+
+    /* カレンダー */
+    .calendar-card {
+        padding: 8px;
+    }
+
+    .calendar-day {
+        min-height: 54px;
+    }
+
+    .calendar-day .day-number {
+        font-size: 17px;
+    }
+
+    .calendar-day .gestational-age {
+        font-size: 12px;
+    }
+}
