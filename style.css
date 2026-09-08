@@ -1082,3 +1082,122 @@ header h1 {
         font-size: 12px;
     }
 }
+
+/* =========================================
+   スマホ：さらにコンパクト表示
+   ========================================= */
+@media (max-width: 600px) {
+
+    .app {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    header {
+        margin-top: 4px;
+        margin-bottom: 8px;
+    }
+
+    header h1 {
+        font-size: 22px;
+        margin: 8px 0 12px;
+    }
+
+    .tabs {
+        gap: 8px;
+        margin-bottom: 12px;
+    }
+
+    .tab-button {
+        min-height: 46px;
+        padding: 8px 4px;
+        font-size: 18px;
+    }
+
+    .card {
+        padding: 12px 14px;
+        margin-bottom: 10px;
+        border-radius: 18px;
+    }
+
+    .card h2 {
+        font-size: 21px;
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+
+    /* 計算方法 */
+    .method-option {
+        min-height: 52px;
+        margin: 2px 0;
+    }
+
+    .method-option label {
+        font-size: 19px;
+    }
+
+    /* Day 3 / Day 5 */
+    .embryo-options {
+        padding: 8px 12px;
+        margin: 2px 0 4px 38px;
+    }
+
+    /* 日付入力 */
+    .date-card {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .date-card label {
+        font-size: 19px;
+        margin-bottom: 8px;
+    }
+
+    input[type="date"] {
+        min-height: 52px;
+        font-size: 20px;
+    }
+
+    /* 計算ボタン */
+    .calculate-button {
+        min-height: 54px;
+        font-size: 22px;
+        margin: 10px 0;
+    }
+
+    /* 計算結果 */
+    .result-card {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .result-card h2 {
+        margin-bottom: 8px;
+    }
+
+    /* カレンダー側 */
+    .calendar-summary {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .calendar-nav {
+        margin: 8px 0;
+    }
+
+    .calendar-nav button {
+        min-height: 46px;
+    }
+
+    .calendar-card {
+        padding: 10px 6px;
+    }
+
+    .calendar-day {
+        min-height: 48px;
+    }
+
+    .calendar-day .day-number {
+        font-size: 17px;
+    }
+}

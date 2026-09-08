@@ -1,4 +1,4 @@
-const CACHE_NAME = "pregnancy-pwa-v5";
+const CACHE_NAME = "pregnancy-pwa-v6";
 
 const FILES_TO_CACHE = [
      "./",
