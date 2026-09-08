@@ -1,11 +1,14 @@
-const CACHE_NAME = "pregnancy-pwa-v2";
+const CACHE_NAME = "pregnancy-pwa-v3";
 
 const FILES_TO_CACHE = [
-    "./",
+     "./",
     "./index.html",
     "./style.css",
     "./app.js",
-    "./manifest.json"
+    "./manifest.json",
+    "./icon-192.png",
+    "./icon-512.png",
+    "./apple-touch-icon.png"
 ];
 
 // インストール時に基本ファイルを保存
