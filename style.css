@@ -1201,3 +1201,10 @@ header h1 {
         font-size: 17px;
     }
 }
+
+.app-footer {
+    text-align: center;
+    font-size: 12px;
+    color: #9a9a9a;
+    padding: 16px 0 24px;
+}
